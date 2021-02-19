@@ -311,7 +311,7 @@
     * this path used to return questions using category id with pagenation list each request return 10 questions
     * it will search for the category in the database if it exist it will return list of the questions else will return 404 error
     * IT required to use the category id or it will return 404 error
-    * example of CURL request: curl -X GET http://localhost:5000/categories/1/questions
+    * example of CURL request: ``` curl -X GET http://localhost:5000/categories/1/questions ```
     ```
       {
            "categories": [
@@ -418,7 +418,7 @@
       
     
     # GET Questions By category type  [GET]
-    * path: http://localhost:5000/categories/<category>/questions
+    * path:  http://localhost:5000/categories/<category>/questions
     * curl example: ```curl -X GET http://localhost:5000/categories/art/questions
     
     ```
@@ -540,7 +540,7 @@
     ```
     
     example of errors:
-       curl http://localhost:5000/categories/or/questions
+       `` curl http://localhost:5000/categories/or/questions ```
        
        ```
          {      
@@ -558,7 +558,7 @@
     * the previous question is required else it will return 422 error if not provided, how it works it take the previous question and category if any
     * then return new question with the answer and the previous question
     * example curl 
-    * curl -d '{"previous_questions":"2-what are the second planet?"}' -H "Content-Type: application/json" -X POST http://localhost:5000/quizzes
+    *  ``` curl -d '{"previous_questions":"2-what are the second planet?"}' -H "Content-Type: application/json" -X POST http://localhost:5000/quizzes ```
 
     ```
         {
@@ -571,8 +571,10 @@
     
     
     * or send category with previousQuestions question
+     ```
       curl -d '{"previous_questions":"9-basketball is famous is footbal in USA?","quiz_category":"python"}'\
       -H "Content-Type: application/json" -X POST     http://localhost:5000/quizzes
+    ```  
       
      ```
        {
@@ -585,7 +587,7 @@
      
      errors may retunred:
      
-     curl -d '{""}' -H "Content-Type: application/json" -X POST http://localhost:5000/quizzes
+     `` curl -d '{""}' -H "Content-Type: application/json" -X POST http://localhost:5000/quizzes ```
      
      ```
         { 
@@ -596,7 +598,7 @@
  
      ```
      
-     curl -d '{"error":"true"}' -H "Content-Type: application/json" -X POST http://localhost:5000/quizzes
+     ``` curl -d '{"error":"true"}' -H "Content-Type: application/json" -X POST http://localhost:5000/quizzes ```
      
      ```
        {   
@@ -616,8 +618,8 @@
 * !Note this endpoint will not duplicate the questions it will return Confilt error [409] id You DID 
 * example of create request
 
- curl -d '{"question":"in python, def keyword define to define var?", "answer":"True","category":"python", "difficulty":"4" }'\
- -H "Content-Type: application/json" -X POST http://localhost:5000/questions
+ ``` curl -d '{"question":"in python, def keyword define to define var?", "answer":"True","category":"python", "difficulty":"4" }'\
+ -H "Content-Type: application/json" -X POST http://localhost:5000/questions ```
 
 
       ```
@@ -691,10 +693,14 @@
           "total_questions": 109
         }
       ```
-
+      ```
 * example of request to create a question that exist:
- curl -d '{"question":"in python, def keyword define to define var?", "answer":"True","category":"python", "difficulty":"4" }'\
- -H "Content-Type: application/json" -X POST http://localhost:5000/questions
+
+
+  ```
+   curl -d '{"question":"in python, def keyword define to define var?", "answer":"True","category":"python", "difficulty":"4" }'\
+   -H "Content-Type: application/json" -X POST http://localhost:5000/questions
+   ``` 
 
 
     ```
@@ -748,7 +754,7 @@
  # search example
  * http://localhost:5000/questions/searchTerm=[question]
  * Insensitive "searchTerm" will search for the search term if it is a substring of an existing question
- * example: curl -d '{"searchTerm":"html"}' -H "Content-Type: application/json" -X POST http://localhost:5000/questions
+ * example: ``` curl -d '{"searchTerm":"html"}' -H "Content-Type: application/json" -X POST http://localhost:5000/questions ```
  
         ```
  
