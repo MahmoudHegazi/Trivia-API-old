@@ -13,6 +13,7 @@
 
 ## how to set up the local development for FLASK API
 
+* I have removed the modules to setup it npm install then npm start the frontend react app working on localhost:3000/ but this Not Important part
 * npm install only once to install dependency 
 * npm start
 * on Windows: Download GitBash, open it, ```cd [project_folder]``` run these 3 commands 
