@@ -86,6 +86,7 @@
     
     # GET All Questions [GET]
     * path: localhost:5000/questions
+    * 
           * return all questions paginated list of the questions start from page 1 each page contains 10 questions 
     
     
