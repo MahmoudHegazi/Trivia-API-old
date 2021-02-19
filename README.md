@@ -830,7 +830,7 @@
     * [test GET with invalid path adding 1000 to questions]
 
 5. test_success_delete
-    * [test adding and delete question full dynamic]
+    * [test delete question full dynamic]
 
 6. test_success_post_question
     * [test adding new question Important note add 1 to HTML question there it must have same question in unsuccess_post_question]
@@ -838,26 +838,29 @@
 7. test_unsuccess_post_question
     * [this test for check there are no duplicated question it must have same question used in test_success_post_question add 1 to HTML]
 
-8. test_unprocessable_post_request
-    * [test invalid post request]
+8.  test_unprocessable_post_request
+     * [test invalid post request]
     
 9.  test_conflict_post_request
-    * [OUR API do not accept both requests from the same resource to make 2 actions Like search and create new question in same time] 
+     * [OUR API do not accept both requests from the same resource to make 2 actions Like search and create new question in same time] 
+    
+10.  test_success_search
+      * [Test successfull search the searchTerm must be a substring in question]
 
-* test_unsuccess_search
-    *  [test unsuccess search make sure the search function will return questions which have the term in it always use mass word]
+11.  test_unsuccess_search
+     *  [test unsuccess search make sure the search function will return questions which have the term in it always use mass word]
 
-* test_success_categories_by_id
-    *  [test geting the categgry by id]
+12.  test_success_categories_by_id
+      *  [test geting the categgry by id]
  
- * test_quiz_success_without_category
-    *  [test the quiz game endpoint without sending category in body]
+13.  test_quiz_success_without_category
+      *  [test the quiz game endpoint without sending category in body]
 
-* test_quiz_success_with_category
-    *  [ test the quiz within category in the request body ]
+14.  test_quiz_success_with_category
+     *  [ test the quiz within category in the request body ]
 
-* test_success_questions
-    *  [this extra endpoint test it test getting category by type it must have the category and the test Database]
+15. test_success_questions
+     *  [this extra endpoint test it test getting category by type it must have the category and the test Database]
 
   
 
@@ -865,13 +868,17 @@
 # Acknowledgements:
 
 * https://udacity.com (advanced track)
-* https://twilio.com
-* https://www.vonage.co.uk/
+* https://stackoverflow.com/questions
+
+
+
+# example of something extra Not realted to the API or python:
 
 
 
 
-    
+
+   
     
    
    
