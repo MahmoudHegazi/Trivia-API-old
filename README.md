@@ -88,12 +88,99 @@
     * path: localhost:5000/questions
     
             * return all questions paginated list of the questions start from page 1 each page contains 10 questions 
+            * example:  curl http://localhost:5000/questions
+            
     
     
     # POST New Questions  [POST]
     * path: localhost:5000/add  ||  localhost:5000/questions
     
-        
+        {
+          "categories": [
+            "history",
+            "entertainment",
+            "geography",
+            "sport",
+            "science",
+            "art"
+          ],
+          "current_category": "5",
+          "questions": [
+            {
+              "answer": "becuase I forced to use it",
+              "category": "5",
+              "difficulty": 1,
+              "id": 114,
+              "question": "why react is bad"
+            },
+            {
+              "answer": "True",
+              "category": "art",
+              "difficulty": 2,
+              "id": 56,
+              "question": "3-leonardo da vinci is famous painter?"
+            },
+            {
+              "answer": "more than 300",
+              "category": "art",
+              "difficulty": 5,
+              "id": 57,
+              "question": "4-how many michelangelo paintings are there?"
+            },
+            {
+              "answer": "true",
+              "category": "art",
+              "difficulty": 5,
+              "id": 65,
+              "question": "12-drawing was the first discoverd art"
+            },
+            {
+              "answer": "true",
+              "category": "art",
+              "difficulty": 5,
+              "id": 64,
+              "question": "11-without music no good code?"
+            },
+            {
+              "answer": "true",
+              "category": "art",
+              "difficulty": 5,
+              "id": 63,
+              "question": "10-music and drawing exist in nutrial before human use?"
+            },
+            {
+              "answer": "piano",
+              "category": "art",
+              "difficulty": 1,
+              "id": 62,
+              "question": "9-which easiet music tool to play?"
+            },
+            {
+              "answer": "7",
+              "category": "art",
+              "difficulty": 5,
+              "id": 61,
+              "question": "8-how many cords in music?"
+            },
+            {
+              "answer": "True",
+              "category": "art",
+              "difficulty": 3,
+              "id": 60,
+              "question": "7-music help to relax?"
+            },
+            {
+              "answer": "False",
+              "category": "art",
+              "difficulty": 3,
+              "id": 59,
+              "question": "6-we can not draw paint with one color?"
+            }
+          ],
+          "success": true,
+          "total_questions": 109
+       }
+
     # DELETE Questions  [POST]
     * path: localhost:5000/questions/<question_id>
     
