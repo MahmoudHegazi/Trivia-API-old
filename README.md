@@ -817,21 +817,49 @@
 
 # test functions:
 
-1.   test_success_categories  [Test GET categories IT must have category You can uncomment to create one Do not duplicate ]
-2.   test_get_all_questions [Normal test to check the questions same it must have questions to get]
-3.   test_success_questions_with_parameter [test get questions using the page query pramters]
-4.   test_missing_question [test GET with invalid path adding 1000 to questions]
-5.   test_success_delete [test adding and delete question full dynamic]
-6.   test_success_post_question [test adding new question Important note add 1 to HTML question there it must have same question in unsuccess_post_question]
-7.   test_unsuccess_post_question [this test for check there are no duplicated question it must have same question used in test_success_post_question add 1 to HTML]
-8.   test_unprocessable_post_request [test invalid post request]
-9.   test_conflict_post_request [OUR API do not accept both requests from the same resource to make 2 actions Like search and create new question]
-10.  test_success_search [test the success search you have to search for question or term that already exist]
-11.  test_unsuccess_search [test unsuccess search make sure the search function will return questions which have the term in it always use mass word]
-12.  test_success_categories_by_id [test geting the categgry by id]
-13.  test_quiz_success_without_category [test the quiz game endpoint without sending category in body]
-14.  test_quiz_success_with_category [ test the quiz within category in the request body ]
-15.  test_success_questions [this extra endpoint test it test getting category by type it must have the category and the test Database]
+* test_success_categories
+    * [Test GET categories IT must have category You can uncomment to create one Do not duplicate ]
+
+* test_get_all_questions
+    * [Normal test to check the questions same it must have questions to get]
+
+* test_success_questions_with_parameter
+    * [test get questions using the page query pramters]
+    
+ * test_missing_question
+    * [test GET with invalid path adding 1000 to questions]
+
+* test_success_delete
+    * [test adding and delete question full dynamic]
+
+* test_success_post_question
+    * [test adding new question Important note add 1 to HTML question there it must have same question in unsuccess_post_question]
+
+* test_unsuccess_post_question
+    * [this test for check there are no duplicated question it must have same question used in test_success_post_question add 1 to HTML]
+
+* test_unprocessable_post_request
+    * [test invalid post request]
+    
+ * test_conflict_post_request
+    * [OUR API do not accept both requests from the same resource to make 2 actions Like search and create new question in same time] 
+
+* test_unsuccess_search
+    *  [test unsuccess search make sure the search function will return questions which have the term in it always use mass word]
+
+* test_success_categories_by_id
+    *  [test geting the categgry by id]
+ 
+ * test_quiz_success_without_category
+    *  [test the quiz game endpoint without sending category in body]
+
+* test_quiz_success_with_category
+    *  [ test the quiz within category in the request body ]
+
+* test_success_questions
+    *  [this extra endpoint test it test getting category by type it must have the category and the test Database]
+
+  
 
 
 # Acknowledgements:
