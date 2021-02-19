@@ -875,9 +875,9 @@
 # example of something extra Not related to The API:
 
 !['screenshoot'](https://github.com/MahmoudHegazi/Trivia-API/blob/main/this.JPG)
-!('screenshoot')[https://github.com/MahmoudHegazi/Trivia-API/blob/main/image.JPG]
-!('screenshoot')[https://github.com/MahmoudHegazi/Trivia-API/blob/main/ok_test.JPG]
-!('screenshoot')[https://github.com/MahmoudHegazi/Trivia-API/blob/main/this.JPG]
+!['screenshoot'](https://github.com/MahmoudHegazi/Trivia-API/blob/main/image.JPG)
+!['screenshoot'](https://github.com/MahmoudHegazi/Trivia-API/blob/main/ok_test.JPG)
+!['screenshoot'](https://github.com/MahmoudHegazi/Trivia-API/blob/main/this.JPG)
 
 
 
