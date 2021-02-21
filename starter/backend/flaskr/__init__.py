@@ -7,11 +7,9 @@ import sys
 import datetime
 import pytz
 from models import setup_db, Question, Category, db
-import time
-import flask_mail
-from flask_mail import Mail, Message
 from sqlalchemy import func
 import json
+
 QUESTIONS_PER_PAGE = 10
 
 # play for question by cat
